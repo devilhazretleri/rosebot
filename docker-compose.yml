@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: "3.9"
+
+services:
+  rosebot:
+    build: .
+    container_name: rosebot
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    environment:
+      - TZ=Europe/Istanbul
