@@ -1,6 +1,7 @@
 import telebot
 from config import TOKEN
 from handlers import moderation, welcome, filters, cleaner, warnings, buttons
+from utils import permissions
 
 bot = telebot.TeleBot(TOKEN)
 
